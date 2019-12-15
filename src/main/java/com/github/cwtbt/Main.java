@@ -2,10 +2,11 @@ package com.github.cwtbt;
 
 import org.javacord.api.DiscordApi;
 import org.javacord.api.DiscordApiBuilder;
+import com.github.cwtbt.config;
 
 public class Main {
     public static void main(String[] args) {
-        String token = "NjU1NjQxMTA1NzY0OTc0NjA1.XfXEpg.TefAYylAfpwKBJSev1b2Yj77y4k";
+        String token = config.token;
 
         DiscordApi api = new DiscordApiBuilder().setToken(token).login().join();
 
